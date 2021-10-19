@@ -1,0 +1,92 @@
+@import url("https://fonts.googleapis.com/css2?family=Kumbh+Sans:wght@400;700&display=swap");
+:root {
+  --dark-cyan: hsl(185, 75%, 39%);
+  --very-dark-desaturated-blue: hsl(229, 23%, 23%);
+  --dark-grayish-blue: hsl(227, 10%, 46%);
+  --dark-gray: hsl(0, 0%, 59%); }
+
+* {
+  margin: 0;
+  padding: 0; }
+
+*,
+::before,
+::after {
+  box-sizing: inherit; }
+
+html {
+  box-sizing: border-box;
+  font-size: 62.5%; }
+
+body {
+  min-height: 100vh;
+  width: 100%;
+  background-color: var(--dark-cyan);
+  position: relative;
+  background-image: url("../images/bg-pattern-top.svg"), url("../images/bg-pattern-bottom.svg");
+  background-repeat: no-repeat;
+  background-position: right 48vw bottom 40vh, left 45vw top 48vh;
+  background-size: 70%; }
+  @media screen and (max-width: 420px) {
+    body {
+      background-size: 100%; } }
+
+section {
+  height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center; }
+
+.card {
+  border-radius: 2rem;
+  overflow: hidden; }
+
+.card__bottom-half {
+  background-color: #fff;
+  text-align: center;
+  margin-top: -0.5rem; }
+
+.card__user-photo {
+  border-radius: 50%;
+  border: 5px solid white;
+  transform: translate(0px, -5rem);
+  margin-bottom: -4rem; }
+
+.card__user-info .name {
+  font-family: "Kumbh Sans", sans-serif;
+  font-weight: 700;
+  font-size: 1.8rem;
+  margin-bottom: 0.8rem; }
+
+.card__user-info .age {
+  font-weight: 400;
+  color: var(--dark-grayish-blue); }
+
+.card__user-info .country {
+  font-family: "Kumbh Sans", sans-serif;
+  font-weight: 400;
+  font-size: 1.4rem;
+  color: var(--dark-grayish-blue);
+  margin-bottom: 2rem; }
+
+hr {
+  color: var(--dark-gray);
+  opacity: 0.25; }
+
+.card__stats ul {
+  list-style: none;
+  text-decoration: none;
+  display: flex;
+  justify-content: center;
+  padding: 3rem 0; }
+  .card__stats ul li {
+    margin-right: 3rem;
+    font-family: "Kumbh Sans", sans-serif;
+    font-weight: 700;
+    font-size: 1.8rem; }
+  .card__stats ul .sub-text {
+    font-family: "Kumbh Sans", sans-serif;
+    font-weight: 400;
+    font-size: 1rem;
+    letter-spacing: 1px;
+    color: var(--dark-grayish-blue); }
