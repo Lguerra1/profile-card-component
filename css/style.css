@@ -21,15 +21,7 @@ html {
 body {
   min-height: 100vh;
   width: 100%;
-  background-color: var(--dark-cyan);
-  position: relative;
-  background-image: url("../images/bg-pattern-top.svg"), url("../images/bg-pattern-bottom.svg");
-  background-repeat: no-repeat;
-  background-position: right 48vw bottom 40vh, left 45vw top 48vh;
-  background-size: 70%; }
-  @media screen and (max-width: 420px) {
-    body {
-      background-size: 100%; } }
+  background-color: gray; }
 
 section {
   height: 100vh;
@@ -38,55 +30,59 @@ section {
   justify-content: center; }
 
 .card {
-  border-radius: 2rem;
-  overflow: hidden; }
+  width: 372px;
+  background-color: white;
+  border: 4px solid gold;
+  padding: 20px; }
 
-.card__bottom-half {
-  background-color: #fff;
-  text-align: center;
-  margin-top: -0.5rem; }
+.header-box {
+  height: 10%;
+  text-align: center; }
 
-.card__user-photo {
-  border-radius: 50%;
-  border: 5px solid white;
-  transform: translate(0px, -5rem);
-  margin-bottom: -4rem; }
+h1 {
+  font-family: 'Kumbh Sans', sans-serif;
+  font-size: 30px;
+  border-bottom: 1px solid gray; }
 
-.card__user-info .name {
-  font-family: "Kumbh Sans", sans-serif;
-  font-weight: 700;
-  font-size: 1.8rem;
-  margin-bottom: 0.8rem; }
+.image-box {
+  margin-top: 20px; }
 
-.card__user-info .age {
-  font-weight: 400;
-  color: var(--dark-grayish-blue); }
+.quest-info-box {
+  position: relative; }
 
-.card__user-info .country {
-  font-family: "Kumbh Sans", sans-serif;
-  font-weight: 400;
-  font-size: 1.4rem;
-  color: var(--dark-grayish-blue);
-  margin-bottom: 2rem; }
-
-hr {
-  color: var(--dark-gray);
-  opacity: 0.25; }
-
-.card__stats ul {
-  list-style: none;
-  text-decoration: none;
+.icon-box {
   display: flex;
-  justify-content: center;
-  padding: 3rem 0; }
-  .card__stats ul li {
-    margin-right: 3rem;
-    font-family: "Kumbh Sans", sans-serif;
-    font-weight: 700;
-    font-size: 1.8rem; }
-  .card__stats ul .sub-text {
-    font-family: "Kumbh Sans", sans-serif;
-    font-weight: 400;
-    font-size: 1rem;
-    letter-spacing: 1px;
-    color: var(--dark-grayish-blue); }
+  align-items: center;
+  margin-top: 10px; }
+
+.book-icon img {
+  height: 30px;
+  width: 40px; }
+
+.description {
+  font-size: 14px;
+  font-weight: 600;
+  font-family: 'Kumbh Sans', sans-serif; }
+
+.quest-information {
+  padding: 10px;
+  font-size: 16px;
+  font-family: 'Kumbh Sans', sans-serif;
+  margin-bottom: 5px; }
+
+.quest-buttons {
+  display: flex;
+  justify-content: space-around; }
+
+.quest-buttons a {
+  width: 120px;
+  height: 20px;
+  cursor: pointer;
+  background-color: #4b4b4b;
+  color: #ffff;
+  border-radius: 30px;
+  text-decoration: none;
+  color: #ffffff;
+  font-size: 14px;
+  font-family: 'Kumbh Sans', sans-serif;
+  text-align: center; }
